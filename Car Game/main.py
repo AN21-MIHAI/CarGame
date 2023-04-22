@@ -79,7 +79,7 @@ class AbstractCar:
 # If we are at max velocity it won't do anything but will move forward.
 # If self.vel is already at the max and we add self.acceleration, we don't want to go faster than max vel.
     def move_forward(self):
-        self.vel = min(self.vel + self.acceleration, )
+        self.vel = min(self.vel + self.acceleration, self.max_vel)
         self.move()
         
     def move_backward(self):
